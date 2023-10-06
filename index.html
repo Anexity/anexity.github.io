@@ -2,9 +2,9 @@
 <html>
     <head>
         <style>
-            html {background-color:#101010}
+            html {background-color:#060606;min-height: 100%;}
             body {font-family: monospace;background-color: #060606;}
-            header {padding-left:10px;padding-right:10px;padding-top: 20px;padding-bottom: 20px ;
+            header {padding-left:10px;padding-right:10px;padding-top: 20px;padding-bottom: 5px ;
                 text-align: center;color:aliceblue;border: 1px;
                 border-style:ridge;width:30%;height:40%;border-color: #010101; border-radius: 20px;
                 background-color: #101010; font-size: smaller;}
@@ -14,7 +14,12 @@
                 .listdiv a:visited {text-decoration: none;color: crimson;}
                 .listdiv a:hover {text-decoration:line-through ;color: aliceblue;}
                 .listdiv a:active {text-decoration: line-through;color: aliceblue;}
-            .headdiv {justify-content: center;display:flex;padding: 50px}
+                .headdiv {justify-content: center;display:flex;padding: 50px}
+                .wrapper {display:flex;justify-content: center;}
+                .liner {display:inline-block;justify-content: center;position: fixed;
+                     bottom: 25px;}
+                .liner a {width:50px;height:50px;filter: invert(100%);text-align: center;}
+                .liner a:link {text-decoration: none;}
         </style>
     </head>
     <body>
@@ -22,6 +27,7 @@
             <div class="headdiv">
                 <header>
                     <h1> _This is a landing Page;</h1>
+                    <P style="position: relative; bottom:15px">© anexity</P>
                 </header>
             </div>  
             <div class="listdiv">
@@ -33,6 +39,22 @@
                 </a>
                 <a id="3" href="https://anexity.github.io/KI_BBS2/" target="https://anexity.github.io/KI_BBS2/">
                     <p>KI-BBS2;</p>
+                </a>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="liner">
+                <a href="https://github.com/Anexity">
+                    <img src="./asset/github.png">
+                </a>
+                <a href="https://twitter.com/Anexity12">
+                    <img src="./asset/twitter.png">
+                </a>
+                <a href="https://discord.gg/PX2VpdZe2v">
+                    <img src="./asset/person.png">
+                </a>
+                <a href="https://www.youtube.com/@anexity.8417">
+                    <img src="./asset/youtube.png">
                 </a>
             </div>
         </div>
