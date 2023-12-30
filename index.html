@@ -8,21 +8,45 @@
                 text-align: center;color:aliceblue;border: 1px;
                 border-style:ridge;width:30%;height:40%;border-color: #010101; border-radius: 20px;
                 background-color: #101010; font-size: smaller;max-width: 700px; min-width: 200px;}
-                .listdiv {text-align: center; color:aliceblue;
-                border-radius: 15px;border-style: none;}
-                .listdiv p {font-size: larger; padding:7px}
-                .listdiv a:link {text-decoration: none;color:darkred}
-                .listdiv a:visited {text-decoration: none;color: crimson;}
+                .listdiv {text-align: center; color:#f0f8ff; padding-top:2%;padding-left:10%;
+                padding-right: 10%; display:flex; max-width:80%; justify-content:center;}
+                .imgbord {
+                    text-align: center;
+                    width:300px;
+                    height:300px;
+                    max-width: 300px;
+                    max-height: 300px;
+                    overflow:hidden;
+                }
+                .listdiv img {
+                    filter:saturate(30%);
+                    width:300px;
+                    height:300px;
+                    max-width: 300px;
+                    max-height: 300px;
+                    border-radius: 15px;
+                    border-style:hidden
+                }
+
+                .listdiv img:hover {
+                    filter:saturate(120%);
+                    overflow: hidden
+                }
+                .listdiv a {
+                    padding-inline:20px;
+                }
+                .listdiv p {font-size: larger; padding:7px;}
+                .listdiv a:link {text-decoration: none;color:grey}
+                .listdiv a:visited {text-decoration: none;color: white;}
                 .listdiv a:hover {text-decoration:line-through ;color: aliceblue;}
                 .listdiv a:active {text-decoration: line-through;color: aliceblue;}
                 .headdiv {justify-content: center;display:flex;padding: 50px}
                 .wrapper {display:flex;justify-content: center;}
                 .liner {display:inline-block;justify-content: center;position: fixed;
-                     bottom: 25px;}
+                    bottom:25px; background-color: #101010; padding: 0.75%; border-radius: 15px;}
                 .liner a {width:50px;height:50px;filter: invert(100%);text-align: center;}
                 .liner a:link {text-decoration: none;}
                 .liner a:hover {filter:opacity(70%)}
-
         </style>
     </head>
     <body>
@@ -34,13 +58,32 @@
                 </header>
             </div>  
             <div class="listdiv">
+                <a id="4" href="https://armageddonteam.creator-spring.com/" 
+                    target="https://armageddonteam.creator-spring.com/"
+                    style="width:980px">
+                    <div class="imgbord" style="width:980px; max-width: 980px;">
+                        <img src="./asset/armageddonshop.png" style="width:980px; max-width: 980px;">
+                    </div>
+                    <p>ARMAGEDDONShop;</p>
+                </a>
+            </div>
+            <div class="listdiv">
                 <a id="1" href="https://anexity.github.io/Anexity.rip/" target="https://anexity.github.io/Anexity.rip/">
+                    <div class="imgbord">
+                        <img src="./asset/nxripprev.png">
+                    </div>
                     <P>Anexity.RIP;</P>
                 </a>
                 <a id="2" href="https://anexity.github.io/Bento/" target="https://anexity.github.io/Bento/">
+                <div class="imgbord">
+                        <img src="./asset/bentoprev.png">
+                    </div>
                     <p>Bento Fork;</p>
                 </a>
                 <a id="3" href="https://anexity.github.io/KI_BBS2/" target="https://anexity.github.io/KI_BBS2/">
+                    <div class="imgbord">
+                        <img src="./asset/KIBBS2.png">
+                    </div>
                     <p>KI-BBS2;</p>
                 </a>
             </div>
@@ -61,5 +104,9 @@
                 </a>
             </div>
         </div>
+        <p> <br>
+            <br>
+            <br>
+        </p>
     </body>
 </HTML>
