@@ -1,4 +1,4 @@
 # anexity.github.io
 
-I will work on this someday.
-I swear.
+This is a revamp (hopefully)
+I swear this is going to be okay please believe lol

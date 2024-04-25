@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../asset/Flyerwrk_Phenomena_11.jpg);
+
+}
+
+.allofit {
+    margin-top: 35vh;
+    margin-bottom: 37.5vh;
+    margin-left: 25%;
+    margin-right: 25%;
+    width:50%;
+    height: 25%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-width: 2px;
+}
+
+#headp {
+    font-size: calc((9vh + 9vw)/2);
+    color: aliceblue;
+    font-family: alag;
+    transform: translatex(-0.5%);
+}
+
+#titles {
+    font-size: calc((1.75vh + 1.75vw)/2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    align-self: center;
+    width:50%;
+    font-family: clean;
+}
+
+#titles a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#mouseover:hover {
+    color:#CC0000;
+    transition: color 120ms ease-in-out;
+}
+
+#headp {
+    text-decoration: none;
+
+}
+
+/* Mobile */
+
+@media screen and (max-width:1100px){
+    .allofit {
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        width:80vw;
+        height:60vh;
+        flex-direction: column;
+        justify-content:space-evenly;
+    }
+
+    #titles {
+        flex-direction: column;
+        justify-content: space-around;
+        height:25vh;
+        font-size: calc((4vh + 4vw)/2);
+    }
+
+    #headp {
+        font-size: calc((12vh + 12vw)/2);
+    }
+}
+
+
+/* Font face */
+
+@font-face {
+    font-family: alag;
+    src: url(../folder/ALAGAMBE.OTF);
+}
+
+@font-face {
+    font-family: clean;
+    src: url(../folder/SPINWERAD.TTF);
+}
