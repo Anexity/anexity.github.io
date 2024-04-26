@@ -31,7 +31,7 @@ body {
     font-size: calc((9vh + 9vw)/2);
     color: aliceblue;
     font-family: alag;
-    transform: translatex(-0.5%);
+    text-align: center;
 }
 
 #titles {
@@ -43,6 +43,7 @@ body {
     align-self: center;
     width:50%;
     font-family: clean;
+    text-align: center;
 }
 
 #titles a {
@@ -50,9 +51,13 @@ body {
     color: aliceblue;
 }
 
+#mouseover {
+    transition: transform 300ms ease-in-out, color 300ms ease-in-out;
+}
+
 #mouseover:hover {
-    color:#CC0000;
-    transition: color 120ms ease-in-out;
+    transform: scale(110%);
+    color: #FF0000;
 }
 
 #headp {
