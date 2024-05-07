@@ -29,9 +29,10 @@ body {
 
 #headp {
     font-size: calc((9vh + 9vw)/2);
-    color: aliceblue;
+    color: 'FFFFFF';
     font-family: alag;
     text-align: center;
+    color: #FFFFFF;
 }
 
 #titles {
@@ -48,7 +49,7 @@ body {
 
 #titles a {
     text-decoration: none;
-    color: aliceblue;
+    color: #FFFFFF;
 }
 
 #mouseover {
@@ -91,6 +92,23 @@ body {
     }
 }
 
+.loader1 {
+    animation: ease-in;
+    animation-duration: 1s;
+    animation-name: Loader1;
+}
+
+.loader2 {
+    animation: ease-in;
+    animation-duration: 2s;
+    animation-name: Loader2;
+}
+
+.loader3 {
+    animation: ease-in;
+    animation-duration: 3s;
+    animation-name: Loader3;
+}
 
 /* Font face */
 
@@ -102,4 +120,42 @@ body {
 @font-face {
     font-family: clean;
     src: url(../folder/SPINWERAD.TTF);
+}
+
+/* ani */
+
+@keyframes Loader1 {
+    0% {
+        filter: opacity(0);
+    }
+    100% {
+        filter: opacity(1);
+    }
+}
+
+@keyframes Loader2 {
+    0% {
+        filter: opacity(0);
+        color: #7000aa;
+    }
+
+    100% {
+        filter: opacity(1);
+        color: #FFFFFF;
+    }
+}
+
+@keyframes Loader3 {
+    0% {
+        filter: opacity(0);
+        color: #400090;
+    }
+    20% {
+        filter: opacity(0);
+        color: #7000aa;
+    }
+    100% {
+        filter: opacity(1);
+        color: #FFFFFF;
+    }
 }
