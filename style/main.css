@@ -94,19 +94,19 @@ body {
 
 .loader1 {
     animation: ease-in;
-    animation-duration: 1s;
+    animation-duration: 4s;
     animation-name: Loader1;
 }
 
 .loader2 {
     animation: ease-in;
-    animation-duration: 2s;
+    animation-duration: 6s;
     animation-name: Loader2;
 }
 
 .loader3 {
     animation: ease-in;
-    animation-duration: 3s;
+    animation-duration: 7s;
     animation-name: Loader3;
 }
 
@@ -126,6 +126,9 @@ body {
 
 @keyframes Loader1 {
     0% {
+        filter: opacity(0);
+    }
+    75% {
         filter: opacity(0);
     }
     100% {
