@@ -1,164 +1,292 @@
+/* CSS Document */
+
 * {
-    padding: 0;
-    margin: 0;
+	margin: 0;
+	padding: 0;
 }
 
-body {
-    background-color: #000000;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-image: url(../asset/Flyerwrk_Phenomena_11.jpg);
 
+.BGCover {
+	background: radial-gradient(#050010, #000030, #200020, #000000);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	z-index: -10
 }
 
-.allofit {
-    margin-top: 35vh;
-    margin-bottom: 37.5vh;
-    margin-left: 25%;
-    margin-right: 25%;
-    width:50%;
-    height: 25%;
-    display: flex;
-    align-self: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-width: 2px;
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	80% {
+		background-position: 0% 100%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
-#headp {
-    font-size: calc((9vh + 9vw)/2);
-    color: 'FFFFFF';
-    font-family: alag;
-    text-align: center;
-    color: #FFFFFF;
+.maintext {
+	display: flex;
 }
 
-#titles {
-    font-size: calc((1.75vh + 1.75vw)/2);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    align-self: center;
-    width:50%;
-    font-family: clean;
-    text-align: center;
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	width: 60%;
+	max-width: 700px;
+	padding-left: 2%;
+	padding-right: 2%;
 }
 
-#titles a {
-    text-decoration: none;
-    color: #FFFFFF;
+.maintext {
+	color: #ffffff;
+	font-family: MainBold;
+	margin-right: 4%;
 }
 
-#mouseover {
-    transition: transform 300ms ease-in-out, color 300ms ease-in-out;
+.undertext {
+	color: #ffffff;
+	font-family: MainRegular;
+	margin-right: 4%;
 }
 
-#mouseover:hover {
-    transform: scale(110%);
-    color: #FF0000;
+.topwrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items: center;
+	margin-bottom: 5vh;
+	width: 100%;
+	padding-bottom: 2%;
+	cursor: default;
+	border-right: 1px solid #ffffff;
 }
 
-#headp {
-    text-decoration: none;
-
+.rightside {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
 }
 
-/* Mobile */
-
-@media screen and (max-width:1100px){
-    .allofit {
-        margin-top: 20vh;
-        margin-bottom: 20vh;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        width:80vw;
-        height:60vh;
-        flex-direction: column;
-        justify-content:space-evenly;
-    }
-
-    #titles {
-        flex-direction: column;
-        justify-content: space-around;
-        height:25vh;
-        font-size: calc((4vh + 4vw)/2);
-    }
-
-    #headp {
-        font-size: calc((12vh + 12vw)/2);
-    }
+.iconwrapper {
+	background-image: url("../img/painye.png");
+	height: 8.5vh;
+	width: 8.5vh;
+	background-position: center;
+	background-size: cover;
+	border-radius: 1vh; 
+	transition: 0.3s;
+	z-index: 0;
 }
 
-.loader1 {
-    animation: ease-in;
-    animation-duration: 4s;
-    animation-name: Loader1;
+.icon {
+	width: 7vh;
+	height: 7vh;
+	margin: 2vh;
 }
 
-.loader2 {
-    animation: ease-in;
-    animation-duration: 6s;
-    animation-name: Loader2;
+.twitter {
+	background-image: url("../img/twitter.svg");
+	background-position:center;
+	background-size: cover;
 }
 
-.loader3 {
-    animation: ease-in;
-    animation-duration: 7s;
-    animation-name: Loader3;
+.twitch {
+	background-image: url("../img/twitch.svg");
+	background-position:center;
+	background-size: cover;
+	
 }
 
-/* Font face */
+.youtube {
+	background-image: url("../img/youtube.svg");
+	background-position:center;
+	background-size: cover;	
+}
+
+.FSLarge {
+	font-size: 4vh;
+}
+
+.FSSmall {
+	font-size: 1.5vh;
+}
+
+.split {
+	width: 50%;
+}
+
+.clickablelist {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 60%;
+	max-width: 700px;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.clickable {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	color: white;
+	font-family: MainRegular;
+	min-width: 48.5%;
+	height: 12vh;
+	margin-bottom: 2vh;
+	background-color: #FF0FFF;
+	border-radius: 0.7em;
+}
+
+.textliner {
+	display: flex;
+	filter: opacity(0);
+	justify-content: center;
+	align-content: center;
+	height: 40%;
+	transition: 0.3s;
+}
+
+.clickable:hover .textliner {
+	filter: opacity(100);
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	height: 20%;
+	transition: 0.3s;
+}
+
+.clickable:hover {
+	cursor: pointer;
+}
+
+#showonhover1 {
+	background-image: url("../backgrimg/clothing.png");
+	background-size: 120%;
+	background-position: center;
+	transition: 0.3s;
+}
+
+#showonhover1:hover {
+	transition: 0.3s;
+	background-image: url("../backgrimg/clothingnonhover.png");
+}
+
+#showonhover2 {
+	background-image: url("../backgrimg/nonhoverport.png");
+	background-size: 120%;
+	background-position: center;
+	transition: 0.3s;
+}
+
+#showonhover2:hover {
+	transition: 0.3s;
+	background-image: url("../backgrimg/hover.png");
+}
+
+#showonhover3 {
+	background-image: url("../backgrimg/hubnonhover.png");
+	background-size: 120%;
+	background-position: center;
+	transition: 0.3s;
+}
+
+#showonhover3:hover {
+	transition: 0.3s;
+	background-image: url("../backgrimg/hubh.png");
+}
+.resize {
+	width: 100%;
+}
+
+.iconwrapper:hover .showonhover {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	transition: 0.3s
+}
+
+.showonhover {
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	font-family: MainBold;
+	transition: 0.3s
+}
+
+.iconwrapper:hover {
+	background-image: url("../img/painyehover.png");
+	transition: 0.3s
+}
+
+.nodeco:link {
+	text-decoration: none;
+}
+
+.clickedinfo {
+	justify-content: center;
+	align-items: center;
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #00000090;
+	cursor: default;
+	z-index: 200;
+	transition: 0.3s;
+}
+
+.clickedinfo2 {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #00000090;
+	cursor: default;
+	z-index: 200;
+	transition: 0.3s;
+}
+
+
+.iconlineup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 20%;
+}
+
 
 @font-face {
-    font-family: alag;
-    src: url(../folder/ALAGAMBE.otf);
+	font-family: "MainBold";
+  	src: url("../fontasset/Outfit-Bold.ttf")
 }
 
 @font-face {
-    font-family: clean;
-    src: url(../folder/SPINWERAD.TTF);
+	font-family: "MainRegular";
+  	src: url("../fontasset/Outfit-Regular.ttf")
 }
 
-/* ani */
 
-@keyframes Loader1 {
-    0% {
-        filter: opacity(0);
-    }
-    75% {
-        filter: opacity(0);
-    }
-    100% {
-        filter: opacity(1);
-    }
-}
-
-@keyframes Loader2 {
-    0% {
-        filter: opacity(0);
-        color: #7000aa;
-    }
-
-    100% {
-        filter: opacity(1);
-        color: #FFFFFF;
-    }
-}
-
-@keyframes Loader3 {
-    0% {
-        filter: opacity(0);
-        color: #400090;
-    }
-    20% {
-        filter: opacity(0);
-        color: #7000aa;
-    }
-    100% {
-        filter: opacity(1);
-        color: #FFFFFF;
-    }
-}
