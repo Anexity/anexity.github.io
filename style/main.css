@@ -213,6 +213,19 @@
 	transition: 0.3s;
 	background-image: url("../backgrimg/hubh.png");
 }
+
+#showonhover4 {
+	background-image: url("../backgrimg/diceroller.png");
+	background-size: 120%;
+	background-position: center;
+	transition: 0.3s;
+}
+
+#showonhover4:hover {
+	transition: 0.3s;
+	background-image: url("../backgrimg/dicerollerhover.png");
+}
+
 .resize {
 	width: 100%;
 }
