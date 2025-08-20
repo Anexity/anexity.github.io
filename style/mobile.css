@@ -1,0 +1,50 @@
+@media (max-width:850px ) {
+    .topwrapper {
+        flex-direction: column;
+        border-right: none;
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 2.5vh;
+        margin-bottom: 2.5vh;
+    }
+
+    .split  {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .iconwrwapper {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .maintext {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items:center;
+        margin: 0;;
+    }
+
+    .undertext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .clickable {
+        width: 100%;
+    }
+
+    .portfg {
+        	width: 60vw;
+    }
+}
