@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <script src="./js/main.js"></script>
+    </head>
+    <body>
+        <video id="background-video" autoplay loop muted>
+            <source src="./asset/test.mp4" type="video/mp4">
+        </video>
+        <div class="displaybox">
+            <div class="header">
+                <video autoplay muted id="renderin">
+                    <source src="./asset/Animation.webm" type="video/webm">
+                </video>
+                </div>
+            </div>
+        </div>
+        <div class="floatmenu">
+            <a class="clickable outfit-light" href="https://armageddonteam.creator-spring.com/">
+                SHOP
+            </a>
+            <a class="clickable outfit-light" id="tagS" onclick="hideSocials()">
+                SOCIALS
+            </a>
+            <a class="clickable outfit-light" href="https://github.com/Anexity">
+                GITHUB
+            </a>
+            <a class="clickable outfit-light" Id="contit" onclick="hideContact()">
+                CONTACT
+            </a>
+        </div>
+        <div class="bottom outfit-light">
+            ARMAGEDDON is part of Anexitys branding theme, do not use icons or typography made for this project for other uses.
+        </div>
+        <div class="showsocials hidesocials" id="soc">
+            <a class="twitter" href="https://x.com/Anexity12">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><g><path d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"></path></g></svg>
+            </a>
+            <a class="Youtube" href="https://www.youtube.com/@anexity.8417">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                <g>
+                    <path stroke="#ffffff" fill="none" stroke-width="1" d="M21.58,7.19c-0.23-0.86-0.91-1.54-1.77-1.77C18.25,5,12,5,12,5S5.75,5,4.19,5.42   C3.33,5.65,2.65,6.33,2.42,7.19C2,8.75,2,12,2,12s0,3.25,0.42,4.81c0.23,0.86,0.91,1.54,1.77,1.77C5.75,19,12,19,12,19   s6.25,0,7.81-0.42c0.86-0.23,1.54-0.91,1.77-1.77C22,15.25,22,12,22,12S22,8.75,21.58,7.19z"></path>
+                    <polygon fill="#FFFFFF" points="10,15 15,12 10,9  "></polygon>
+                </g>
+                </svg>
+            </a>
+            <a class="twitch" href="https://www.twitch.tv/nexdied">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 2400 2800" style="enable-background:new 0 0 2400 2800;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:#F0F0FF;}
+                </style>
+                <g>
+                    <g id="Layer_1-2">
+                        <path class="st0" d="M500,0L0,500v1800h600v500l500-500h400l900-900V0H500z M2200,1300l-400,400h-400l-350,350v-350H600V200h1600
+                            V1300z"/>
+                        <rect x="1700" y="550" class="st0" width="200" height="600"/>
+                        <rect x="1150" y="550" class="st0" width="200" height="600"/>
+                    </g>
+                </g>
+                </svg>
+            </a>
+        </div>
+        <div class="contacts hidecontacts" id="cont">
+            <a class="discord" onclick="CtC(), popup()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="59" height="44" viewBox="0 0 59 44" fill="none" >
+                    <path d="M37.1937 0C36.6265 1.0071 36.1172 2.04893 35.6541 3.11392C31.2553 2.45409 26.7754 2.45409 22.365 3.11392C21.9136 2.04893 21.3926 1.0071 20.8254 0C16.6928 0.70613 12.6644 1.94475 8.84436 3.69271C1.27372 14.9098 -0.775214 25.8374 0.243466 36.6146C4.67704 39.8906 9.6431 42.391 14.9333 43.9884C16.1256 42.391 17.179 40.6893 18.0819 38.9182C16.3687 38.2815 14.7133 37.4828 13.1274 36.5567C13.5442 36.2557 13.9493 35.9432 14.3429 35.6422C23.6384 40.0179 34.4039 40.0179 43.711 35.6422C44.1046 35.9663 44.5097 36.2789 44.9264 36.5567C43.3405 37.4943 41.6852 38.2815 39.9604 38.9298C40.8633 40.7009 41.9167 42.4025 43.109 44C48.3992 42.4025 53.3653 39.9137 57.7988 36.6377C59.0027 24.1358 55.7383 13.3007 49.1748 3.70429C45.3663 1.95633 41.3379 0.717706 37.2053 0.0231518L37.1937 0ZM19.3784 29.9816C16.5192 29.9816 14.1461 27.3886 14.1461 24.1821C14.1461 20.9755 16.4266 18.371 19.3669 18.371C22.3071 18.371 24.6455 20.9871 24.5992 24.1821C24.5529 27.377 22.2956 29.9816 19.3784 29.9816ZM38.6639 29.9816C35.7931 29.9816 33.4431 27.3886 33.4431 24.1821C33.4431 20.9755 35.7236 18.371 38.6639 18.371C41.6042 18.371 43.9309 20.9871 43.8846 24.1821C43.8383 27.377 41.581 29.9816 38.6639 29.9816Z" fill="#ffffff"/>
+                </svg>
+            </a>
+        </div>
+        <div class="copied outfit-light" id="cop">
+            copied to clipboard!
+        </div>
+    </body>
+</html>

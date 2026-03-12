@@ -1,0 +1,162 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+   min-width: 100vw;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+
+#background-video {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+}
+
+#renderin {
+    width: 110vh;
+    height: 70vh;
+    object-fit: contain;
+    position: relative;
+    mix-blend-mode:lighten;
+}
+.floatmenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:absolute;
+    right:5vmin;
+    top: 5vmin;
+    width: 25vw;
+}
+
+.clickable {
+    color: white;
+    font-size: calc(0rem + 0.7vw + 0.7vh);
+}
+
+.outfit-light {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.clickable:hover {
+    font-weight: 600;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    color: white;
+    font-size: calc(0rem + 0.4vw + 0.4vh);
+    bottom: 3vmin;
+    left: 3vmin;
+    font-weight: 100;
+}
+
+.showsocials {
+    right: 5vmin;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;    
+}
+
+.hidesocials {
+    right: -8vmin;
+    transition: 0.5s;
+    filter: opacity(0);
+}
+
+.twitter, .Youtube, .twitch, .discord {
+    width: 5vmin;
+    height: 5vmin;
+    margin: 1vmin;
+    transition: 0.2s;
+}
+
+.twitter svg {
+    fill: white;
+}
+
+.twitch:hover, .twitter:hover, .Youtube:hover, .discord:hover{
+    filter: opacity(60%);
+    transition: 0.2s;
+}
+
+.colorize {
+    color: #ff60cc;
+    transition: 0.2s;
+}
+
+.contacts {
+    left: 5vmin;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.contacts a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidecontacts {
+    left: -8vmin;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.copied {
+    display: none;
+    position: absolute;
+    color: #fff;
+    bottom: calc( 50vmin - (0.45vw + 0.45vh));
+    left: 15vmin;
+    animation: popup 5s;
+    font-size:calc(0rem + 0.6vw + 0.6vh) ;
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 100%;
+    }
+
+    90% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
