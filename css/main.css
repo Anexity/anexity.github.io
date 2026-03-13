@@ -4,6 +4,12 @@
     margin: 0;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+   overflow: hidden;
+}  
+
 body {
    min-width: 100vw;
    min-height: 100vh;
@@ -11,6 +17,9 @@ body {
    justify-content: center;
    align-items: center;
    overflow: hidden;
+   width: 100vw;
+   height: 100vh;
+   background-color: #000;
 }
 
 #background-video {
@@ -23,14 +32,16 @@ body {
    top: 0;
    bottom: 0;
    z-index: -1;
+   overflow: hidden;
 }
 
 #renderin {
-    width: 110vh;
+    width: 120vw;
     height: 70vh;
     object-fit: contain;
     position: relative;
     mix-blend-mode:lighten;
+   overflow: hidden;
 }
 .floatmenu {
     display: flex;
@@ -85,9 +96,10 @@ body {
 }
 
 .hidesocials {
-    right: -8vmin;
+    right: 0vmin;
     transition: 0.5s;
     filter: opacity(0);
+    overflow: hidden;
 }
 
 .twitter, .Youtube, .twitch, .discord {
@@ -128,9 +140,10 @@ body {
 }
 
 .hidecontacts {
-    left: -8vmin;
+    left: 0vmin;
     opacity: 0;
     transition: 0.5s;
+    overflow: hidden;
 }
 
 .copied {
@@ -159,4 +172,119 @@ body {
     100% {
         opacity: 0;
     }
+}   
+
+@media (orientation: portrait) {
+    #renderin {
+        width: 140vw;
+        overflow: hidden;
+    }
+
+    .floatmenu {
+        display: flex;  
+        align-items: center;
+        justify-content: space-between;
+        position:absolute;
+        right:10vmin;
+        top: 7.5vmin;
+        width: 80vw;
+    }
+
+    .clickable {
+        font-size: calc(0rem + 1.2vw + 1.2vh);
+        font-weight: 300;
+    }
+
+    .colorize {
+        color: #ff60cc;
+        transition: 0.2s;
+        font-weight: 300;
+    }
+
+    .clickable:hover {
+        font-weight: 300;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position:absolute;
+        color: white;
+        font-size: calc(0rem + 0.8vw + 0.8vh);
+        bottom: 8vmin;
+        left: 10vmin;
+        font-weight: 100;
+        width: 80vw;
+        text-align: center;
+    }
+
+    .twitter, .Youtube, .twitch, .discord {
+        width: 10vmin;
+        height: 10vmin;
+        margin: 3vmin;
+        transition: 0.2s;
+    }
+
+    .contacts {
+        top: 25vh;
+        left: 42vw;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+
+    .contacts a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hidecontacts {
+        top: 30vh;
+        left: 42vw;
+        opacity: 0;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    
+    .showsocials {
+        right: 26vmin;
+        bottom: 25vh;
+        position: absolute;
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;    
+    }
+
+    .hidesocials {
+        bottom: 30vh;
+        transition: 0.5s;
+        filter: opacity(0);
+        overflow: hidden;
+    }
+
+    .copied {
+        display: none;
+        position: absolute;
+        color: #fff;
+        top: 35vh;
+        left: 25vw;
+        width: 50vw;
+        animation: popup 5s;
+        font-size:calc(0rem + 1.2vh + 1.2vh);
+        text-align: center;
+        justify-content: center;
+    }
+
+    .twitch:hover, .twitter:hover, .Youtube:hover, .discord:hover{
+        filter: opacity(100%);
+    }
+
 }
