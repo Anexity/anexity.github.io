@@ -51,7 +51,7 @@ body {
     position:absolute;
     right:5vmin;
     top: 5vmin;
-    width: 25vw;
+    width: 35vw;
 }
 
 .clickable {
@@ -67,6 +67,16 @@ body {
     transition: 0.2s;
     text-decoration: none;
 }
+
+.outfit-Norm {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
 
 .clickable:hover {
     font-weight: 600;
@@ -155,6 +165,55 @@ body {
     left: 15vmin;
     animation: popup 5s;
     font-size:calc(0rem + 0.6vw + 0.6vh) ;
+}
+
+.head {
+    width: 90wv;
+    color: white;
+    font-size: 2em;
+    text-align: start;
+}
+
+.displaybox2 {
+    background-color: #000000cc;
+    width: 65vw;
+    height: 65vh;
+    padding: 10vmin;
+    border-radius: 2vmin;
+}
+
+.split {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.list {
+    margin: 3vmin;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list a {
+    margin: 0.3vmin;
+}
+
+.list a:link {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.list a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+
+.list a:hover {
+    color:  #ff60cc;
+    transition: 0.3s;
 }
 
 @keyframes popup {
